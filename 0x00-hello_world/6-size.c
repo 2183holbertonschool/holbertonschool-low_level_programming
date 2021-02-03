@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	printf("Size of int data type : %d\n", sizeof(int));
+	printf("Size of int data type: %lu\n", sizeof(int));
 	return (0);
 }
