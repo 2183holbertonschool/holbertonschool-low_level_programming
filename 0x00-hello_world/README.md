@@ -1,0 +1,1 @@
+This folder contain basic excercises about c lenguage
