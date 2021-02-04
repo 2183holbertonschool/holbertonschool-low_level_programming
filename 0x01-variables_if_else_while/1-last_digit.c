@@ -14,7 +14,7 @@ int main(void)
 	r = n % 10;
 	if (r > 6)
 	{
-		printf("Last digit of %i is %i greater than 6 and not 0\n", n, r);
+		printf("Last digit of %i is %i qnd greater than\n", n, r);
 	}
 	if (r == 0)
 	{
@@ -22,7 +22,7 @@ int main(void)
 	}
 	else if (r < 6 && r != 0)
 	{
-		printf("Last digit of %i is %i less than 6 and not 0\n", n, r);
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, r);
 	}
 	return (0);
 }
