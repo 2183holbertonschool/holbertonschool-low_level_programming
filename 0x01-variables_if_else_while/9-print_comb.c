@@ -12,8 +12,11 @@ int main(void)
 	for (ch = '0' ; ch <= '9' ; ch++)
 	{
 		putchar(ch);
-		putchar(44);
-		putchar(32);
+		if (ch != '9')
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
 	putchar('\n');
 	return (0);
