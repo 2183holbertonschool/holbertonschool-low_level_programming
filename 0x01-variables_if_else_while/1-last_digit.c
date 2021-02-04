@@ -1,8 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+#include <stdio.h>
+/**
+ * main - entry point
+ * Return: always 0 (success)
+ **/
 int main(void)
 {
 	int n, r;
@@ -12,16 +14,15 @@ int main(void)
 	r = n % 10;
 	if (r > 6)
 	{
-		printf("Last digit of, %i and is %i greater than 6 and not 0", n, r);
-	};
+		printf("Last digit of %i is %i greater than 6 and not 0\n", n, r);
+	}
 	if (r == 0)
 	{
-		printf("Last digit of, %i and is 0 an is 0", n);
+		printf("Last digit of, %i is 0 an is 0\n", n);
 	}
-	else if (r < 6)
+	else if (r < 6 && r != 0)
 	{
-		printf("Last digit of, %i and is %i less than 6 and not 0", n, r);)
-	};
-
+		printf("Last digit of %i is %i less than 6 and not 0\n", n, r);
+	}
 	return (0);
 }
