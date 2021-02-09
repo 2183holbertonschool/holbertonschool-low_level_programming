@@ -1,31 +1,42 @@
 #include "holberton.h"
+
 /**
- * times_table- entry point
- * Return: always 0 (success)
- **/
+ * times_table - prints the 9 times table starting with 0
+ * void: No return
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 void times_table(void)
 {
-	int i;
-	int j;
-	int mul;
-	int d;
+	int i, j, n;
 
-	for (i = 0 ; i <= 9 ; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0 ; j <= 9 ; j++)
+		for (j = 0; j <= 9; j++)
 		{
-			mul = i * j;
-			d = mul / 10;
-			if (d != 0)
+			n = i * j;
+			if (n > 9)
 			{
-				_putchar(mul % 10 + 48);
+				if (j != 0)
+				{
+					_putchar(44);
+					_putchar(32);
+				}
+				_putchar('0' + n / 10);
+				_putchar('0' + n % 10);
 			}
-			_putchar(mul % 10 + 48);
-			_putchar(',');
-			_putchar(9);
+			else
+			{
+				if (j != 0)
+				{
+					_putchar(44);
+					_putchar(32);
+					_putchar(32);
+				}
+				_putchar('0' + n);
+			}
 		}
 		_putchar('\n');
 	}
-	_putchar('\n');
-	return (0);
 }
