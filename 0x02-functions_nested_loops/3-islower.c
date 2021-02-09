@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
- * _islower - entry point
+ * _islower - checks for lowercase character
+ * @c: First operant
  * Return: always 0 (success)
  **/
 
