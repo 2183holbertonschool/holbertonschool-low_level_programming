@@ -1,5 +1,9 @@
 #include "holberton.h"
 
+/**
+ * print_alphabet - print the alphabet on screen
+ * return: Always void
+ */
 void print_alphabet(void)
 {
 	char ch;
