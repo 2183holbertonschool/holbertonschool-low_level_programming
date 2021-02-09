@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
- * main - entry point
+ * _abs - computes the absolute value of an integer.
+ * @i: number
  * Return: always 0 (success)
  **/
 
